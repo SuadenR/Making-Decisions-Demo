@@ -3,8 +3,8 @@
     with Jon being allowed to flee his fight with Jamie.
 */
 
-let jonSnowAttack = 75
-let jamieLannisterAttack = 100
+var jonSnowAttack = 75
+var jamieLannisterAttack = 100
 
 if ( jonSnowAttack > jamieLannisterAttack) {
     console.log('Jon Snow has higher attack than Jamie Lannister')
@@ -15,12 +15,12 @@ else if ( jamieLannisterAttack > jonSnowAttack) {
     console.log("Jamie is still better tbh")
 }
 
-let jonSnowHealth = 100
-let jamieLannisterHealth = 125
-let jonSnowArmour = 25
-let jamieLannisterArmour = 50
-let jonSnowArmourPenetration = 10
-let jamieLannisterArmourPenetration = 15
+var jonSnowHealth = 95
+var jamieLannisterHealth = 125
+var jonSnowArmour = 25
+var jamieLannisterArmour = 50
+var jonSnowArmourPenetration = 10
+var jamieLannisterArmourPenetration = 15
 
 if ( jonSnowHealth + jonSnowArmour <= jamieLannisterAttack + jamieLannisterArmourPenetration) {
     console.log('Jon Snow has been slain by Jamie Lannister')
@@ -28,7 +28,7 @@ if ( jonSnowHealth + jonSnowArmour <= jamieLannisterAttack + jamieLannisterArmou
 else if ( jonSnowAttack + jonSnowArmourPenetration >= jamieLannisterHealth + jamieLannisterArmour) {
     console.log(`Jamie Lannister has been slain by Jon Snow`)
 }
-else {
-    jonSnowHealth = jonSnowHealth + jonSnowArmour - jamieLannisterAttack - jamieLannisterArmourPenetration
+else (
+    jonSnowHealth = jonSnowHealth + jonSnowArmour - jamieLannisterAttack - jamieLannisterArmourPenetration) 
     console.log (`Jon Snow's current health is ${jonSnowHealth}`)
-}
+
