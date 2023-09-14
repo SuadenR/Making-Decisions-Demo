@@ -15,7 +15,7 @@ else if ( jamieLannisterAttack > jonSnowAttack) {
     console.log("Jamie is still better tbh")
 }
 
-var jonSnowHealth = 95
+var jonSnowHealth = 150
 var jamieLannisterHealth = 125
 var jonSnowArmour = 25
 var jamieLannisterArmour = 50
@@ -33,16 +33,19 @@ else (
     console.log (`Jon Snow's current health is ${jonSnowHealth}`)
 
 var isDead = Math.random() > .5
-
-for (let i = 0; i <= 50 ; i++) {
+for (let i = 0; i <= 2 ; i++) {
     isDead = Math.random() > .5
     if (isDead === true) {
         console.log (`Jon has died after ${i} rounds`)
         break
     }
 }
-
 if (isDead === false) {
     console.log(`It is a miracle! Jon is alive after the bombardment.`)
 }
+while (jonSnowHealth > 0) {
+    console.log(`Jamie punches Jon, it REALLY hurts`)
+    jonSnowHealth -= 5
+}
 
+console.log(`Jon died in the woods after being beat down`) 
